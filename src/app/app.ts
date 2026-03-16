@@ -8,5 +8,5 @@ import { RouterOutlet } from '@angular/router';
   styleUrl: './app.css'
 })
 export class App {
-  protected readonly title = signal('angular-example');
+  protected readonly title = signal('SRSI - Sistema de Registro de Solicitações Internas');
 }

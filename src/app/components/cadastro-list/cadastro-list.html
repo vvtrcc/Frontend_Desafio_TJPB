@@ -1,0 +1,24 @@
+<div class="container mt-5">
+  <div class="row">
+    <div class="col-md-12">
+      <h2>Product List</h2>
+      <a routerLink="/add-cadastro" class="btn btn-primary mb-3">Adicionar Cadastro</a>
+      <table class="table table-striped">
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Titulo</th>
+            <th>Descrição</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let cadastro of cadastros">
+            <td>{{ cadastro.id }}</td>
+            <td>{{ cadastro.titulo }}</td>
+            <td>{{ cadastro.descricao }}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
